@@ -10,10 +10,12 @@
 	case, 4.
 */
 #pragma once
+
 #include <iostream>
 #include <cmath>
 
 using namespace std;
+
 int main() 
 {
 	/* Declaration section */
@@ -72,12 +74,14 @@ int main()
 			while (r < 0)
 			{
 				cout << "Error, enter positive number!" << endl;
+
 				cout << "Enter radius of the circle: ";
 				cin >> r;
 			}
 
 			area = pi * pow(r, 2);
 			cout << "Area of the circle: " << area << endl;
+
 			break;
 		case 2:		// Calculate area of a rectangle
 			cout << "Enter length of the rectangle: ";
@@ -86,6 +90,7 @@ int main()
 			while (length < 0) 
 			{
 				cout << "Error, enter positive number!" << endl;
+
 				cout << "Enter length of the rectangle: ";
 				cin >> length;
 			}
@@ -96,12 +101,14 @@ int main()
 			while (width < 0) 
 			{
 				cout << "Error, enter positive number!" << endl;
+
 				cout << "Enter width of the rectangle: ";
 				cin >> width;
 			}
 
 			area = length * width;
 			cout << "Area of the rectangle: " << area << endl;
+
 			break;
 
 		case 3:		// Calculate area of a triangle
@@ -111,6 +118,7 @@ int main()
 			while (base < 0) 
 			{
 				cout << "Error, enter positive number!" << endl;
+
 				cout << "Enter length of the base of the triangle: ";
 				cin >> base;
 			}
@@ -121,15 +129,18 @@ int main()
 			while (height < 0) 
 			{
 				cout << "Error, enter positive number!" << endl;
+
 				cout << "Enter height of the triangle: ";
 				cin >> height;
 			}
 
 			area = base * height * 0.5;
 			cout << "Area of the triangle: " << area << endl;
+
 			break;
 		default:	// Invalid choice entered
 			cout << "Invalid choice entered" << endl;
+
 			break;
 
 		} // End of switch
